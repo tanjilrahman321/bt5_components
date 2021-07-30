@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Components</title>
+  </head>
+  <body class="bg-light">
+
+    <header class="container">
+      <nav class="nav justify-content-center">
+        <a class="nav-link text-uppercase text-dark fw-bold" href="#">home</a>
+        <a class="nav-link text-uppercase text-dark fw-bold" href="#">about</a>
+        <a class="nav-link text-uppercase text-dark fw-bold" href="#">portfolio</a>
+        <a class="nav-link text-uppercase text-dark fw-bold" href="#">contact</a>
+        <a class="border border-0 bg-light d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#enable_offcanvas" aria-controls="enable_offcanvas"><img class="img-fluid" style="width: 30px;" src="images/hamb.png" alt=""></a>
+      </nav>
+      <div class="offcanvas offcanvas-start canvas_cus_width" data-bs-scroll="true"tabindex="-1" id="enable_offcanvas" aria-labelledby="enable_offcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title " id="enable_offcanvasLabel">Menubar</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-dark canvas_cus_width">
+                <nav class="nav flex-column">
+                  <a class="nav-link text-uppercase text-info" href="#">home</a>
+                  <a class="nav-link text-uppercase text-info" href="#">about</a>
+                  <a class="nav-link text-uppercase text-info" href="#">portfolio</a>
+                  <a class="nav-link text-uppercase text-info" href="#">contact</a>
+                </nav>
+              </div>
+            </div>
+    </header>
+
+            
+
+   
+
+    <div class="container pt-3 pb-5">
+      <h2 class="text-center">Accordion Practice</h2>
+      <div class="row pt-2">
+        <div class="col-lg-6">
+
+          <div class="accordion" id="acc_ex_1">
+
+            <!-- item 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="h_one">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c_one" aria-expanded="true" aria-controls="c_one">
+        Lorem ipsum dolor sit amet.
+      </button>
+    </h2>
+    <div id="c_one" class="accordion-collapse collapse show" aria-labelledby="h_one" data-bs-parent="#acc_ex_1">
+      <div class="accordion-body">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel dolor quia officiis, ea nemo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- item 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="h_two">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c_two" aria-expanded="false" aria-controls="c_two">
+        Lorem ipsum dolor sit amet.
+      </button>
+    </h2>
+    <div id="c_two" class="accordion-collapse collapse" aria-labelledby="h_two" data-bs-parent="#acc_ex_1">
+      <div class="accordion-body">
+        <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Atque facilis autem aliquam error aperiam maxime!</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="accordion" id="acc_ex_2">
+
+            <!-- second colum item 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="second_h_one">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#second_c_one" aria-expanded="true" aria-controls="second_c_one">
+        Lorem, ipsum dolor.
+      </button>
+    </h2>
+    <div id="second_c_one" class="accordion-collapse collapse show" aria-labelledby="second_h_one" data-bs-parent="#acc_ex_2">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odit provident, qui, ratione eius iste.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- second colum item 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="second_h_two">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#second_c_two" aria-expanded="false" aria-controls="second_c_two">
+        Lorem, ipsum dolor.
+      </button>
+    </h2>
+    <div id="second_c_two" class="accordion-collapse collapse" aria-labelledby="second_h_two" data-bs-parent="#acc_ex_2">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sed, sunt, corrupti neque fuga fugiat.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+        </div>
+
+      </div>
+    </div>  
+
+    <div class="container">
+      <h2 class="text-center">Alert Practice</h2>
+      <div class="row">
+        <div class="offset-lg-3 col-lg-6">
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </symbol>
+            </svg>
+
+              <div class="alert alert-primary d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                  An example alert with an icon
+                </div>
+              </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-lg-6 border border-info p-5">
+          <h2 class="text-center">Badge Practice</h2>
+          <p>Lorem ipsum dolor, sit <span class="badge bg-success">amet</span></p>
+          <button type="button" class="btn btn-primary mb-3">Notifications <span class="badge bg-danger">6</span></button> <br>
+
+          <button type="button" class="btn btn-success position-relative fs-5 mb-3">mail 
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
+          </button> <br>
+
+          <button type="button" class="btn btn-primary position-relative">admin
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            </span>
+          </button>
+
+        </div>
+        <!-- button column -->
+        <div class="col-lg-6 border border-info p-5">
+          <h2 class="text-center">Buttons</h2>
+          <button type="button" class="btn btn-secondary mb-3">Secondary</button><br>
+          <button type="button" class="btn btn-success mb-3">Success</button><br>
+          <button type="button" class="btn btn-danger mb-3">Danger</button><br>
+          <button type="button" class="btn btn-warning">Warning</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- card practice -->
+          <div class="card">
+            <img src="images/a.jpg" alt="" class="card-image-top rounded">
+            <div class="card-body">
+              <h2 class="card-title">
+                Card Practice
+              </h2>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus a, odit adipisci porro inventore eum recusandae dignissimos aspernatur saepe!
+              </p>
+              <p class="blockquote-footer">author- <cite title="I am the author"><a href="https://tanjilrahman.com" class="card-link">tanjil_rahman</a></cite></p>
+              <a href="#" class="btn btn-primary rounded">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- card practice -->
+          <div class="card">
+            <img src="images/a.jpg" alt="" class="card-image-top rounded">
+            <div class="card-body">
+              <h2 class="card-title">
+                Card Practice
+              </h2>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus a, odit adipisci porro inventore eum recusandae dignissimos aspernatur saepe!
+              </p>
+              <p class="blockquote-footer">author- <cite title="I am the author"><a href="https://tanjilrahman.com" class="card-link">tanjil_rahman</a></cite></p>
+              <a href="#" class="btn btn-danger rounded">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- card practice -->
+          <div class="card">
+            <img src="images/a.jpg" alt="" class="card-image-top rounded">
+            <div class="card-body">
+              <h2 class="card-title">
+                Card Practice
+              </h2>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus a, odit adipisci porro inventore eum recusandae dignissimos aspernatur saepe!
+              </p>
+              <p class="blockquote-footer">author- <cite title="I am the author"><a href="https://tanjilrahman.com" class="card-link">tanjil_rahman</a></cite></p>
+              <a href="#" class="btn btn-dark rounded">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+        </div>
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-3 mb-3">
+      <div class="row">
+        <div class="col-md-4">
+          <ol class="list-group list-group-numbered">
+            <!-- first list item -->
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>
+                  Cras justo odio
+              </div>
+              <span class="badge bg-primary rounded-pill">14</span>
+            </li>
+            <!-- second list item -->
+            <li class="list-group-item d-flex justify-content-betweent align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>Cras justo odio
+              </div>
+              <span class="badge bg-warning rounded-pill">12</span>
+            </li>
+            <!-- third list item -->
+            <!-- second list item -->
+            <li class="list-group-item d-flex justify-content-betweent align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Subheading</div>Cras justo odio
+              </div>
+              <span class="badge bg-warning rounded-pill">12</span>
+            </li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              First checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Second checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Third checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Fourth checkbox
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="dropdown">
+            <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            More Items
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">first item</a></li>
+              <li><a class="dropdown-item" href="#">second item</a></li>
+              <li><a class="dropdown-item" href="#">third item</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container overflow-scroll" style="width: 400px; height: 350px;">
+      
+       
+          <nav id="scroll_nav" class="navbar navbar-light bg-light px-3">
+          <a class="navbar-brand" href="#">logo</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#scroll_1">Home</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#scroll_2">Service</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scroll_3">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#scroll_4">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scroll_5">Terms</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#scroll_nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+          <h4 id="scroll_1">Home</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero accusamus dolores voluptatibus provident inventore quidem perferendis sit. Vitae, accusamus facere. Repellendus excepturi ullam explicabo consectetur illo. Libero ab odit modi!</p>
+          <h4 id="scroll_2">Service</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, commodi dignissimos nihil eos saepe pariatur, sapiente? Repellat, at, perferendis ipsa dolore magnam, labore, consequatur enim accusamus repudiandae a ducimus nam!</p>
+          <h4 id="scroll_3">Portfolio</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio veniam, nostrum molestiae doloremque quasi architecto corporis itaque aliquam sapiente, incidunt repellat ab recusandae in, fuga accusantium voluptatem ullam consectetur? Est.</p>
+          <h4 id="scroll_4">Contact</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Sed, rem excepturi quibusdam labore at, culpa debitis consequuntur explicabo, ex quos corrupti nulla porro enim repudiandae cupiditate fugit corporis quo dolorum.</p>
+          <h4 id="scroll_5">Terms</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Molestias eaque consequatur non dignissimos officia aut reiciendis quas, excepturi autem quaerat, enim esse obcaecati similique architecto minus tempore fugiat atque explicabo.</p>
+        </div>
+        
+      
+    </div>
+
+    
+          
+         
+
+    <!--JS -->
+    <script src="js/popper.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>   
+    <script src="js/script.js"></script>   
+   
+  </body>
+</html>
